@@ -1,15 +1,14 @@
 # AIMER: AI-Assisted Software Analysis & Improvement Prompts
 
-AIMER is a comprehensive collection of prompts designed to help developers analyze and improve software systems with the assistance of AI tools like Claude. These prompts are formatted as custom slash commands for Claude Code, making them easily accessible during your development workflow.
+AIMER is a comprehensive collection of prompts designed to help developers analyze and improve software systems with the assistance of AI.
 
-## Features
 - Ready-to-use prompts for various software analysis tasks
-- Workflow-optimized prompt templates for product and feature development
 - Code analysis and improvement prompts
-- Jobs-to-be-Done (JTBD) templates for product development
-- All prompts available as Custom Slash Commands for Claude Code
 
-## Installation
+You may use these prompts whereever you like. 
+We’ll document a way to use them as [custom slash commands in Claude Code](https://docs.anthropic.com/en/docs/claude-code/tutorials#create-custom-slash-commands):
+
+## Use with Claude Code
 
 ### Project-Specific Commands
 
@@ -28,7 +27,7 @@ git clone https://github.com/yourusername/aimer.git .claude/commands
 2. Use the commands in Claude Code with the `/project:` prefix:
 
 ```
-claude > /project:analyze-performance
+claude > /project:hotspot-analysis
 ```
 
 #### Option 2: Git Submodule (Recommended)
@@ -45,7 +44,7 @@ git submodule add https://github.com/yourusername/aimer.git .claude/commands/aim
 2. Use the commands in Claude Code with the `/project:` prefix:
 
 ```
-claude > /project:analyze-performance
+claude > /project:hotspot-analysis
 ```
 
 3. Update the submodule when needed:
@@ -67,21 +66,19 @@ git clone https://github.com/yourusername/aimer.git ~/.claude/commands
 2. Use the commands in Claude Code with the `/user:` prefix:
 
 ```
-claude > /user:analyze-performance
+claude > /user:hotspot-analysis
 ```
 
 ## Usage Tips
-- Command names are derived from the filename (e.g., `analyze-performance.md` becomes `/project:analyze-performance`)
+- Command names are derived from the filename (e.g., `hotspot-analysis.md` becomes `/project:hotspot-analysis`)
 - You can organize prompts in subdirectories for better categorization
 - Project-scoped commands are shared with team members who have access to the repository
 - User-scoped commands are only available to you across all projects
-- Some prompts use `$ARGUMENTS` to accept additional contextual information
+- Some prompts may use `$ARGUMENTS` to accept additional contextual information as parameter to `claude` on the CLI
 
 ## Categories
-- **Product Analysis**: Prompts for analyzing product requirements and features
-- **JTBD Analysis**: Jobs-to-be-Done templates for understanding user needs
 - **Workflow Optimization**: Prompts for improving development workflows
-- **Code Analysis**: Deep-dive code analysis and improvement suggestions
+- **Code and Architecture Analysis**: Deep-dive code analysis and improvement suggestions
 - **Documentation**: Templates for generating and improving documentation
 
 ## Contributing
