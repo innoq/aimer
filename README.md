@@ -21,7 +21,7 @@ To make AIMER prompts available within a specific project:
 ```bash
 # Navigate to your project root
 mkdir -p .claude/commands
-git clone https://github.com/yourusername/aimer.git .claude/commands
+git clone https://github.com/innoq/aimer.git .claude/commands
 ```
 
 2. Use the commands in Claude Code with the `/project:` prefix:
@@ -38,7 +38,7 @@ Adding AIMER as a Git submodule allows you to track specific versions and update
 ```bash
 # Navigate to your project root
 mkdir -p .claude/commands
-git submodule add https://github.com/yourusername/aimer.git .claude/commands/aimer
+git submodule add https://github.com/innoq/aimer.git .claude/commands/aimer
 ```
 
 2. Use the commands in Claude Code with the `/project:` prefix:
@@ -60,7 +60,7 @@ To make AIMER prompts available for all your projects:
 
 ```bash
 mkdir -p ~/.claude/commands
-git clone https://github.com/yourusername/aimer.git ~/.claude/commands
+git clone https://github.com/innoq/aimer.git ~/.claude/commands
 ```
 
 2. Use the commands in Claude Code with the `/user:` prefix:
