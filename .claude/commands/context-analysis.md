@@ -1,4 +1,4 @@
-# Context Analysis Prompt
+# Context Analysis
 
 ## Purpose
 Analyze system boundaries, external interfaces, and neighboring systems to identify risks, dependencies, and potential integration issues.

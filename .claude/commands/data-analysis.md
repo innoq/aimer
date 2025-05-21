@@ -1,4 +1,4 @@
-# Data Analysis Prompt
+# Data Analysis
 
 ## Purpose
 Evaluate data storage, data models, and data flow patterns to identify issues with data quality, access, and management.
@@ -54,6 +54,7 @@ Evaluate data storage, data models, and data flow patterns to identify issues wi
 
 ## Output Format
 Provide a structured report with sections for:
+
 1. Data storage system inventory and assessment
 2. Data model evaluation
 3. Data flow mapping and analysis

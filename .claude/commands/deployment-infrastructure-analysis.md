@@ -1,4 +1,4 @@
-# Deployment and Infrastructure Analysis Prompt
+# Deployment and Infrastructure Analysis
 
 ## Purpose
 Evaluate deployment processes, infrastructure configuration, and operational readiness to identify risks, inefficiencies, and improvement opportunities.
@@ -12,7 +12,6 @@ Evaluate deployment processes, infrastructure configuration, and operational rea
    - Database schema updates
    - Feature flag management
    - Environment promotion flow
-
 2. Evaluate infrastructure configuration:
    - Infrastructure-as-code implementation
    - Cloud provider utilization
@@ -21,7 +20,6 @@ Evaluate deployment processes, infrastructure configuration, and operational rea
    - Network topology and security
    - Storage systems
    - Resource allocation and utilization
-
 3. Assess monitoring and observability:
    - Logging implementation and centralization
    - Metrics collection and dashboards
@@ -30,7 +28,6 @@ Evaluate deployment processes, infrastructure configuration, and operational rea
    - Error tracking
    - Service health checks
    - On-call procedures
-
 4. Analyze reliability and resilience:
    - Single points of failure
    - Failover mechanisms
@@ -39,7 +36,6 @@ Evaluate deployment processes, infrastructure configuration, and operational rea
    - Load testing results
    - Chaos engineering practices
    - Incident response procedures
-
 5. Evaluate operational efficiency:
    - Infrastructure costs
    - Resource utilization
@@ -48,7 +44,6 @@ Evaluate deployment processes, infrastructure configuration, and operational rea
    - Drift detection and management
    - Toil reduction
    - Automation opportunities
-
 6. Assess security posture:
    - Network segmentation
    - Access control mechanisms
@@ -59,6 +54,7 @@ Evaluate deployment processes, infrastructure configuration, and operational rea
 
 ## Output Format
 Provide a structured report with sections for:
+
 1. Deployment process assessment
 2. Infrastructure configuration evaluation
 3. Monitoring and observability analysis

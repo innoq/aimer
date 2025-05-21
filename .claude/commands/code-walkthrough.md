@@ -1,4 +1,4 @@
-# Code Walkthrough Prompt
+# Code Walkthrough
 
 ## Purpose
 Trace execution paths through code to evaluate business logic implementation, cross-cutting concerns, and architectural consistency.
@@ -8,7 +8,6 @@ Trace execution paths through code to evaluate business logic implementation, cr
    - [Describe the significant use case or business flow to analyze]
    - Starting points (API endpoints, UI interactions, etc.)
    - Expected outcomes and business rules
-
 2. Perform a static code analysis to trace the execution path:
    - Entry point identification
    - Control flow through functions/methods
@@ -16,7 +15,6 @@ Trace execution paths through code to evaluate business logic implementation, cr
    - Data transformations
    - External dependencies and services invoked
    - Exit points and result handling
-
 3. For each segment of the execution path, analyze:
    - Code organization and structure
    - Error handling and edge cases
@@ -25,7 +23,6 @@ Trace execution paths through code to evaluate business logic implementation, cr
    - Logging and observability
    - Transaction management
    - Resource utilization
-
 4. Evaluate cross-cutting concerns implementation:
    - Authentication and authorization
    - Input validation
@@ -35,14 +32,12 @@ Trace execution paths through code to evaluate business logic implementation, cr
    - Transaction boundaries
    - Caching strategy
    - Feature flags/toggles
-
 5. Assess architectural adherence:
    - Conformance to declared architecture
    - Appropriate separation of concerns
    - Adherence to development guidelines
    - Use of standard libraries and frameworks
    - Consistency with similar features
-
 6. Identify potential issue areas:
    - Excessive complexity
    - Error-prone constructs

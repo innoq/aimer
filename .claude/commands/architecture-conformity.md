@@ -1,4 +1,4 @@
-# Architecture Conformity Analysis Prompt
+# Architecture Conformity Analysis
 
 ## Purpose
 Evaluate how well the implemented system conforms to the intended architecture design, identifying drift, violations, and architectural debt.
@@ -11,7 +11,6 @@ Evaluate how well the implemented system conforms to the intended architecture d
    - Integration patterns
    - Technology selections
    - Defined constraints and principles
-
 2. Extract the actual architecture from the codebase:
    - Component dependencies
    - Package structure
@@ -19,7 +18,6 @@ Evaluate how well the implemented system conforms to the intended architecture d
    - Service dependencies
    - Layer violations
    - Technology usage
-
 3. Identify architectural conformity issues:
    - Layer violations (e.g., bypassing layers)
    - Inappropriate component dependencies
@@ -27,7 +25,6 @@ Evaluate how well the implemented system conforms to the intended architecture d
    - Technology stack deviations
    - Violation of design principles
    - Excessive coupling between components
-
 4. Analyze architectural debt:
    - Outdated architectural decisions
    - Incomplete refactorings
@@ -35,14 +32,12 @@ Evaluate how well the implemented system conforms to the intended architecture d
    - Inconsistent patterns
    - Duplicated functionality
    - Workarounds and temporary fixes
-
 5. Evaluate evolution of architecture:
    - Recent architectural changes
    - Trend toward increased/decreased conformity
    - New architectural patterns introduced
    - Abandoned architectural elements
    - Modernization efforts
-
 6. For each violation or drift, provide:
    - Severity and impact assessment
    - Specific location and evidence
@@ -52,6 +47,7 @@ Evaluate how well the implemented system conforms to the intended architecture d
 
 ## Output Format
 Provide a structured report with sections for:
+
 1. Summary of documented vs. actual architecture
 2. Visual representation of architectural conformity
 3. Major architectural violations identified

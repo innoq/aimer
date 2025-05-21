@@ -1,4 +1,4 @@
-# Security Analysis Prompt
+# Security Analysis
 
 ## Purpose
 Identify security vulnerabilities, risks, and compliance issues within the system architecture and implementation.
@@ -11,7 +11,6 @@ Identify security vulnerabilities, risks, and compliance issues within the syste
    - Password policies and storage
    - Multi-factor authentication implementation
    - API security (keys, tokens, OAuth)
-
 2. Examine data protection practices:
    - Sensitive data identification
    - Encryption at rest
@@ -20,7 +19,6 @@ Identify security vulnerabilities, risks, and compliance issues within the syste
    - Data masking/anonymization
    - PII handling procedures
    - Compliance with relevant regulations (GDPR, HIPAA, etc.)
-
 3. Identify common security vulnerabilities:
    - Input validation weaknesses
    - Cross-site scripting (XSS) vectors
@@ -29,7 +27,6 @@ Identify security vulnerabilities, risks, and compliance issues within the syste
    - Cross-site request forgery (CSRF) protection
    - File upload vulnerabilities
    - Insecure deserialization
-
 4. Analyze infrastructure security:
    - Network security configuration
    - Firewall rules and access controls
@@ -37,14 +34,12 @@ Identify security vulnerabilities, risks, and compliance issues within the syste
    - Cloud service configuration
    - Privileged access management
    - Secrets management
-
 5. Evaluate security observability:
    - Logging of security events
    - Monitoring for suspicious activities
    - Alerting mechanisms
    - Incident response procedures
    - Audit trails for sensitive operations
-
 6. Assess security processes:
    - Secure development lifecycle
    - Dependency scanning
