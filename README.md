@@ -73,8 +73,33 @@ claude > /user:hotspot-analysis
 - Command names are derived from the filename (e.g., `hotspot-analysis.md` becomes `/project:hotspot-analysis`)
 - You can organize prompts in subdirectories for better categorization
 - Project-scoped commands are shared with team members who have access to the repository
-- User-scoped commands are only available to you across all projects
-- Some prompts may use `$ARGUMENTS` to accept additional contextual information as parameter to `claude` on the CLI
+- User-scoped commands are available to you across all projects
+- All prompts use `$ARGUMENTS` to accept additional contextual information as parameter to `claude` on the CLI, as well as inside the REPL
+
+### Using Thinking Mode (Reasoning)
+
+All AIMER commands include a `$ARGUMENTS` placeholder that allows you to pass additional instructions to enhance Claude's analysis. One powerful use case is enabling **thinking mode** to get deeper, more thorough analysis. 
+
+#### Examples
+
+**Basic command:**
+```
+claude > /user:hotspot-analysis
+```
+
+**With thinking mode for deeper analysis:**
+```
+claude > /user:hotspot-analysis think
+claude > /user:hotspot-analysis think harder
+claude > /user:hotspot-analysis ultrathink
+```
+
+**Other useful argument patterns:**
+```
+claude > /user:code-walkthrough focus on error handling patterns
+claude > /user:quality-scenario-analysis prioritize performance scenarios
+claude > /user:stakeholder-interviews include technical debt concerns
+```
 
 ## Categories
 - **Workflow Optimization**: Prompts for improving development workflows
