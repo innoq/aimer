@@ -41,3 +41,5 @@ Please provide your output in the following format:
 </adr>
 
 Remember to base your ADR solely on the information provided in the repository analysis. Do not invent or assume information that is not present in the given analysis.
+
+$ARGUMENTS

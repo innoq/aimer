@@ -49,3 +49,5 @@ Provide a structured report with sections for:
    to make it easier for a human reviewer to reproduce your approach
 6. Provide the proportion of source code files and lines included in the hotspot analysis relative to the total number of source code lines in the application
 7. Recommended refactoring and improvement strategies
+
+$ARGUMENTS

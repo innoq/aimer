@@ -43,3 +43,5 @@ Provide a structured report with sections for:
 3. Architectural support evaluation for each scenario
 4. Identified risks, sensitivity points, and tradeoffs
 5. Recommended architectural improvements
+
+$ARGUMENTS

@@ -54,3 +54,5 @@ Provide a structured report with sections for:
 4. Architectural debt assessment
 5. Architecture evolution trends
 6. Prioritized recommendations for improving architectural integrity
+
+$ARGUMENTS

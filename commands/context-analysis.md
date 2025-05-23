@@ -58,3 +58,5 @@ Provide a structured report with sections for:
 3. High-risk interfaces with detailed analysis
 4. External dependencies and their impact
 5. Recommendations for interface improvements
+
+$ARGUMENTS

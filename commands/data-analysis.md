@@ -62,3 +62,5 @@ Provide a structured report with sections for:
 5. Data access pattern analysis
 6. Data governance evaluation
 7. Prioritized recommendations for data management improvement
+
+$ARGUMENTS

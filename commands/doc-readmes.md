@@ -39,3 +39,5 @@ This directory contains documentation related to [brief description].
 Your task is to create these README.md files for the docs directory and its immediate subdirectories, ensuring easy navigation through the documentation structure. Make sure to use relative paths for all links so that they work correctly when rendered on GitHub.
 
 Remember to create README.md files only for the docs directory and its immediate subdirectories, not for deeper levels of the directory structure.
+
+$ARGUMENTS

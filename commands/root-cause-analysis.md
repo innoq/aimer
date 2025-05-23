@@ -40,3 +40,5 @@ Provide a structured report with sections for:
 2. Root causes identified with supporting evidence
 3. Symptom-to-cause mapping
 4. Prioritized remediation recommendations
+
+$ARGUMENTS

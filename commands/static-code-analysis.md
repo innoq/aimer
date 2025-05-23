@@ -64,3 +64,5 @@ Provide a structured report with sections for:
 5. Potential bugs and defects
 6. Style and best practice violations
 7. Prioritized recommendations for improvement
+
+$ARGUMENTS

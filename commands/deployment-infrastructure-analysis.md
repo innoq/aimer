@@ -62,3 +62,5 @@ Provide a structured report with sections for:
 5. Operational efficiency recommendations
 6. Security posture evaluation
 7. Prioritized improvement recommendations
+
+$ARGUMENTS

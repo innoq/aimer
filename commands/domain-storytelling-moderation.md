@@ -203,3 +203,5 @@ flowchart LR
 - Gruppenbildung kann auf Aggregate oder Bounded Contexts hinweisen
 - Die in den Stories verwendete Sprache bildet die Grundlage für Ubiquitous Language
 - Mehrere zusammenhängende Stories können eine Subdomäne abbilden
+
+$ARGUMENTS

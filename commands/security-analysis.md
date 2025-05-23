@@ -56,3 +56,5 @@ Provide a structured report with sections for:
 5. Infrastructure security analysis
 6. Security monitoring and response evaluation
 7. Prioritized recommendations with remediation strategies
+
+$ARGUMENTS

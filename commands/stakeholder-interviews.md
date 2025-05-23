@@ -53,3 +53,5 @@ Provide a structured report with sections for:
 5. Critical issues with broad agreement
 6. Opportunities for quick wins
 7. Strategic improvement recommendations
+
+$ARGUMENTS

@@ -54,3 +54,5 @@ Provide a structured report with sections for:
 4. Cross-cutting concerns evaluation
 5. Architectural consistency assessment
 6. Identified issues and recommendations
+
+$ARGUMENTS

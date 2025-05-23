@@ -60,3 +60,5 @@ Provide a structured report with sections for:
 5. Key metrics and trends
 6. Identified bottlenecks and inefficiencies
 7. Recommendations for process improvements
+
+$ARGUMENTS
