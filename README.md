@@ -118,3 +118,11 @@ Contributions are welcome! Please feel free to submit a pull request with new pr
 
 ## License
 See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Made with ❤️ at INNOQ
+
+<div align="center">
+  <img src="https://innoq.style/assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg" alt="INNOQ Logo" width="200">
+</div>
