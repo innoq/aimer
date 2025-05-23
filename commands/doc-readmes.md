@@ -2,7 +2,7 @@
 
 You are tasked with creating a system of README files to improve the navigation of a project's documentation. The main README file already exists, but you need to create additional README files in the docs directory and its subdirectories to facilitate easy navigation through the documentation structure.
 
-Your task is to create README.md files in the docs directory and its immediate subdirectories. These README files should contain links to the subdirectories and documents within them, using relative paths to ensure compatibility with GitHub's rendered markdown.
+Your task is to create README.md files in the docs directory and its immediate subdirectories. These README files should contain links to the subdirectories and documents within them, using relative paths to ensure compatibility with GitHub's or Gitlab's rendered markdown.
 
 Follow these steps:
 
