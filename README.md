@@ -5,6 +5,8 @@ AIMER is a comprehensive collection of prompts designed to help developers analy
 - Ready-to-use prompts for various software analysis tasks
 - Code analysis and improvement prompts
 
+![](aimer.webp)
+
 ## Use with Claude Code
 
 You may use these prompts whereever you like. 
