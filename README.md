@@ -123,6 +123,4 @@ See the [LICENSE](LICENSE) file for details.
 
 ## Made with ❤️ at INNOQ
 
-<div align="center">
-  <img src="https://innoq.style/assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg" alt="INNOQ Logo" width="200">
-</div>
+<img src="https://innoq.style/assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg" alt="INNOQ" width="150">
