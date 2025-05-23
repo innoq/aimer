@@ -98,9 +98,9 @@ claude > /user:hotspot-analysis ultrathink
 
 **Other useful argument patterns:**
 ```
-claude > /user:code-walkthrough focus on error handling patterns
-claude > /user:quality-scenario-analysis prioritize performance scenarios
-claude > /user:stakeholder-interviews include technical debt concerns
+claude > /user:code-walkthrough think and focus on error handling patterns
+claude > /user:quality-scenario-analysis think and prioritize performance scenarios
+claude > /user:stakeholder-interviews think escpecially about technical debt concerns
 ```
 
 ## Categories
