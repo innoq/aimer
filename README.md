@@ -1,9 +1,7 @@
 # AIMER: AI-Assisted Software Analysis & Improvement Prompts
 
-AIMER is a comprehensive collection of prompts designed to help developers analyze and improve software systems with the assistance of AI.
-
-- Ready-to-use prompts for various software analysis tasks
-- Code analysis and improvement prompts
+AIMER is a comprehensive collection of prompts designed to help developers and architects analyze and improve software systems with the assistance of AI.
+Essentially: Ready-to-use prompts for various software analysis tasks: hot spot analysis, writing ADRs, process analysis, and more.
 
 ![](aimer.webp)
 
