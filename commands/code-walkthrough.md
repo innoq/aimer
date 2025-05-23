@@ -1,4 +1,4 @@
-# Code Walkthrough Prompt
+# Code Walkthrough
 
 ## Purpose
 Trace execution paths through code to evaluate business logic implementation, cross-cutting concerns, and architectural consistency. Focus on understanding how business requirements are implemented and where the implementation deviates from intended design.

@@ -1,4 +1,4 @@
-# Deployment and Infrastructure Analysis Prompt
+# Deployment and Infrastructure Analysis
 
 ## Purpose
 Evaluate deployment processes, infrastructure configuration, and operational readiness to identify risks, inefficiencies, and improvement opportunities. Focus on understanding how infrastructure choices impact system reliability, performance, and maintainability.

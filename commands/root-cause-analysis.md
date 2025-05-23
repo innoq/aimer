@@ -1,4 +1,4 @@
-# Root Cause Analysis Prompt
+# Root Cause Analysis
 
 ## Purpose
 Systematically investigate reported system symptoms to identify underlying root causes rather than just treating visible symptoms. Avoid the "microscope trap" by understanding the full system context and organizational factors.

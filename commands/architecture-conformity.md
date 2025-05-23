@@ -1,4 +1,4 @@
-# Architecture Conformity Analysis Prompt
+# Architecture Conformity Analysis
 
 ## Purpose
 Evaluate how well the implemented system conforms to intended architectural design, identify architectural drift and erosion, and assess the impact of architectural debt on system maintainability and evolution.

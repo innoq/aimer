@@ -1,4 +1,4 @@
-# Hotspot Analysis Prompt
+# Hotspot Analysis
 
 ## Purpose
 Identify high-risk code areas by combining complexity metrics with change frequency from version control history. Focus refactoring efforts on code that is both complex and frequently modified, as this represents the highest maintenance burden.

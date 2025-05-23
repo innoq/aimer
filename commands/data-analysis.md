@@ -1,4 +1,4 @@
-# Data Analysis Prompt
+# Data Analysis
 
 ## Purpose
 Evaluate data storage, data models, data flow patterns, and data governance to identify issues with data quality, access, management, and architectural alignment. Focus on understanding how data design impacts system performance, maintainability, and business capabilities.

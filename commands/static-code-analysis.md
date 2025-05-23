@@ -1,4 +1,4 @@
-# Static Code Analysis Prompt
+# Static Code Analysis
 
 ## Purpose
 Systematically evaluate code quality, identify structural issues, and detect potential bugs or vulnerabilities through automated and manual analysis. Focus on finding patterns that indicate deeper architectural or process problems.

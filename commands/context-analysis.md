@@ -1,4 +1,4 @@
-# Context Analysis Prompt
+# Context Analysis
 
 ## Purpose
 Map the system's ecosystem by analyzing all external touchpoints, dependencies, and interfaces. Identify integration risks and understand how the system fits into the broader technical and business landscape.

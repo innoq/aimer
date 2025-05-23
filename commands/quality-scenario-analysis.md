@@ -1,4 +1,4 @@
-# Quality Scenario Analysis Prompt
+# Quality Scenario Analysis
 
 ## Purpose
 Systematically evaluate architecture against quality requirements using concrete, measurable scenarios. Identify architectural trade-offs and risks that impact system quality attributes based on ISO 25010 and the ATAM methodology.

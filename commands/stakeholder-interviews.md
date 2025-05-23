@@ -1,4 +1,4 @@
-# Stakeholder Interview Prompt
+# Stakeholder Interview
 
 ## Purpose
 Systematically gather diverse perspectives to understand the true problems and root causes affecting the system, not just surface symptoms. Build trust while uncovering both known issues and hidden risks.

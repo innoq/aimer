@@ -1,4 +1,4 @@
-# Development Process Analysis Prompt
+# Development Process Analysis
 
 ## Purpose
 Identify organizational and process issues that manifest as technical problems. Many technical symptoms have their root causes in team dynamics, communication patterns, and development workflows.

@@ -1,4 +1,4 @@
-# Security Analysis Prompt
+# Security Analysis
 
 ## Purpose
 Systematically identify security vulnerabilities, risks, and compliance gaps within the system. Focus on both technical security measures and organizational security practices that could impact system security posture.
