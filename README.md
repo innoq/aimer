@@ -1,16 +1,17 @@
 # AIMER: AI-Assisted Software Analysis & Improvement Prompts
 
-AIMER provides battle-tested methodologies and structured approaches for software analysis and improvement, leveraging years of practical experience in software architecture and development. These aren't just prompts – they're distilled little frameworks based on solid foundations from industry expertise and proven practices.
+AIMER is a comprehensive collection of prompts designed to help developers analyze and improve software systems with the assistance of AI.
 
-Each command represents a specific analytical methodology designed to systematically examine different aspects of your software systems: from identifying architectural hotspots and documenting decisions to analyzing stakeholder needs and security concerns.
+- Ready-to-use prompts for various software analysis tasks
+- Code analysis and improvement prompts
 
-<div align="center">
-<img src="aimer.webp" alt="Illustration of a wooden catapult with a smiling face aimed at a stone castle tower, with colorful bandages floating above, representing AIMER's approach to fixing and improving software systems" width="50%">
-</div>
+![](aimer.webp)
+
+> **💡 Important Hint**: All AIMER prompts are designed for **thinking mode (reasoning)** or, if not using Claude, models that can do chain-of-thought reasoning. For optimal results, append terms like "think", "think harder", or "ultrathink" to your slash commands. By default, thinking mode is not activated, so remember to explicitly enable it for deeper, more thorough analysis.
 
 ## Use with Claude Code
 
-You may use these prompts wherever you like. 
+You may use these prompts whereever you like. 
 We’ll document a way to use them as [custom slash commands in Claude Code](https://docs.anthropic.com/en/docs/claude-code/tutorials#create-custom-slash-commands):
 
 ### Project-Specific Commands
@@ -101,7 +102,7 @@ claude > /user:hotspot-analysis ultrathink
 ```
 claude > /user:code-walkthrough think and focus on error handling patterns
 claude > /user:quality-scenario-analysis think and prioritize performance scenarios
-claude > /user:stakeholder-interviews think especially about technical debt concerns
+claude > /user:stakeholder-interviews think escpecially about technical debt concerns
 ```
 
 ## Categories
