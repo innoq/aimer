@@ -1,6 +1,6 @@
 # Architecture Decision Record (ADR)
 
-You are tasked with generating a single Architecture Decision Record (ADR) based on the analysis of the current feature branch. Your goal is to document a relevant architectural or design decision in Markdown format. 
+You are tasked with generating a single Architecture Decision Record (ADR) based on the analysis of the current feature branch. Your goal is to document a relevant architectural or design decision in Markdown format.
 
 Please follow these steps to complete your task:
 
@@ -28,15 +28,19 @@ Please provide your output in the following format:
 # ADR {ADR_NUMBER}: [Insert brief title of the decision]
 
 ## Context
+
 [Explain the background, requirements, and conflicts that led to this decision]
 
 ## Decision
+
 [Describe what was decided, using the phrase "We will..."]
 
 ## Status
+
 [Indicate the current status]
 
 ## Consequences
+
 [Discuss how this decision impacts the project, both positively and negatively]
 </adr>
 
