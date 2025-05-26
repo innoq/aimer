@@ -7,7 +7,7 @@ Essentially: Ready-to-use prompts for various software analysis tasks: hot spot 
 
 ## Use with Claude Code
 
-You may use these prompts whereever you like. 
+You may use these prompts wherever you like. 
 We’ll document a way to use them as [custom slash commands in Claude Code](https://docs.anthropic.com/en/docs/claude-code/tutorials#create-custom-slash-commands):
 
 ### Project-Specific Commands
@@ -98,7 +98,7 @@ claude > /user:hotspot-analysis ultrathink
 ```
 claude > /user:code-walkthrough think and focus on error handling patterns
 claude > /user:quality-scenario-analysis think and prioritize performance scenarios
-claude > /user:stakeholder-interviews think escpecially about technical debt concerns
+claude > /user:stakeholder-interviews think especially about technical debt concerns
 ```
 
 ## Categories
