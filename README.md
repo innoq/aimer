@@ -8,7 +8,7 @@ Each command represents a specific analytical methodology designed to systematic
     <img src="aimer.webp" alt="Illustration of a wooden catapult with a smiling face aimed at a stone castle tower, with colorful bandages floating above, representing AIMER's approach to fixing and improving software systems" width="50%">
 </div>
 
-> **💡 Important Hint**: All AIMER prompts are designed for **thinking mode (reasoning)** or, if not using Claude, models that can do chain-of-thought reasoning. For optimal results, append terms like "think", "think harder", or "ultrathink" to your slash commands. By default, thinking mode is not activated, so remember to explicitly enable it for deeper, more thorough analysis.
+**💡 Important Hint**: All AIMER prompts are designed for **thinking mode (reasoning)** or, if not using Claude, models that can do chain-of-thought reasoning. For optimal results, append terms like "think", "think harder", or "ultrathink" to your slash commands. By default, thinking mode is not activated, so remember to explicitly enable it for deeper, more thorough analysis.
 
 ## Use with Claude Code
 
