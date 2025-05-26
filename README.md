@@ -117,9 +117,9 @@ Contributions are welcome! When creating or modifying prompts, please follow our
 Please feel free to submit a pull request with new prompts or improvements to existing ones.
 
 ## Maintainers
-- Markus Harrer
-- Roman Stranghöner
-- Robert Glaser
+- [Markus Harrer](https://www.innoq.com/en/staff/markus-harrer/)
+- [Roman Stranghöner](https://www.innoq.com/en/staff/roman-stranghoener/)
+- [Robert Glaser](https://www.innoq.com/en/staff/robert-glaser/)
 
 ## License
 See the [LICENSE](LICENSE) file for details.
