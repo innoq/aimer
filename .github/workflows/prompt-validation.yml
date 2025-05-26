@@ -2,12 +2,14 @@ name: Prompt Validation
 
 on:
   pull_request:
+    types: [opened, synchronize]
     paths:
       - 'commands/**.md'
       - 'prompt-guideline.md'
 
 jobs:
   validate-prompts:
+    if: contains(github.event.pull_request.changed_files, 'commands/') || contains(github.event.pull_request.changed_files, 'prompt-guideline.md')
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -18,50 +20,36 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch all history for proper diff
+          fetch-depth: 0
 
-      - name: Get changed prompt files
-        id: changed-files
-        run: |
-          # Get list of changed prompt files in this PR
-          echo "Changed prompt files:"
-          git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -E "^commands/.*\.md$" || echo "No prompt files changed"
-          
-          # Count changed files
-          count=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -E "^commands/.*\.md$" | wc -l || echo "0")
-          echo "changed_count=$count" >> $GITHUB_OUTPUT
-          
-          # Save list for comment
-          {
-            echo "## 🔍 Prompt Validation Request"
-            echo ""
-            echo "@claude Please validate the following changed prompt files against our prompt-guideline.md:"
-            echo ""
-            git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -E "^commands/.*\.md$" | while read file; do
-              echo "- \`$file\`"
-            done || echo "No prompt files changed"
-            echo ""
-            echo "Check for:"
-            echo "1. All required sections (Purpose, Context, Instructions, Output Format, Success Criteria, \$ARGUMENTS)"
-            echo "2. No role-based prompting patterns"
-            echo "3. Imperative, direct language"
-            echo "4. Explicit output format specification"
-            echo "5. \$ARGUMENTS placeholder at the end"
-            echo ""
-            echo "Please provide a validation report with ✅/❌/⚠️ indicators for each file."
-          } > comment.txt
-
-      - name: Comment PR for validation
-        if: steps.changed-files.outputs.changed_count != '0'
-        uses: actions/github-script@v7
+      - name: Run Claude validation
+        uses: anthropics/claude-code-action@beta
         with:
-          script: |
-            const fs = require('fs');
-            const comment = fs.readFileSync('comment.txt', 'utf8');
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          direct_prompt: |
+            Review this pull request specifically for AIMER prompt quality compliance.
             
-            await github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: comment
-            });
+            Focus ONLY on changed files in the commands/ directory that end with .md
+            
+            For each changed prompt file:
+            1. Read and analyze it against the guidelines in prompt-guideline.md
+            2. Check for ALL of these requirements:
+               - Contains all required sections: Purpose, Context, Instructions, Output Format, Success Criteria
+               - Ends with $ARGUMENTS placeholder
+               - Uses imperative, direct language (no "You should..." patterns)
+               - Avoids role-based prompting (no "You are a..." patterns)
+               - Has explicit, well-structured output format specification
+               - Instructions are clear and logically structured
+            
+            Provide a detailed validation report with:
+            - File name and validation status (✅ PASS / ❌ FAIL / ⚠️ WARNING)
+            - Specific issues found with line numbers where possible
+            - Constructive suggestions for fixing any issues
+            
+            Start your review with:
+            ## 🔍 AIMER Prompt Quality Validation
+            
+            If all prompts pass: "✅ All prompt changes comply with AIMER guidelines!"
+            If issues found: List each issue clearly with actionable feedback.
+            
+            Be helpful and specific - the goal is to maintain high-quality, consistent prompts across the repository.
