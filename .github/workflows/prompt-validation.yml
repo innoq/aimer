@@ -9,7 +9,6 @@ on:
 
 jobs:
   validate-prompts:
-    if: contains(github.event.pull_request.changed_files, 'commands/') || contains(github.event.pull_request.changed_files, 'prompt-guideline.md')
     runs-on: ubuntu-latest
     permissions:
       contents: read
