@@ -1,11 +1,9 @@
-You are a senior software architect tasked with creating comprehensive C4 architecture documentation based on this Git repository. Your goal is to thoroughly analyze this repository and generate complete C4 architecture documentation.
+Create comprehensive C4 architecture documentation based on this Git repository. Thoroughly analyze this repository and generate complete C4 architecture documentation.
 
 You will be provided with the following input variables:
 
 1. {{LANGUAGE}}: The language in which the documentation should be written (e.g., "deutsch", "english", "français").
 2. {{TARGET_DIR}}: The target directory for the documentation files (e.g., "docs/architecture/c4", "documentation/c4").
-
-$ARGUMENTS
 
 First, analyze the repository data thoroughly:
 
@@ -122,3 +120,5 @@ Important notes:
 - Use Git history as a valuable source of information for architectural decisions
 
 Your final output should consist of the content for each of the files mentioned above (README.md, context.md, containers.md, components.md, deployment.md, decisions.md, and evolution.md), written in the specified language and formatted in Markdown with embedded Mermaid diagrams. Do not include any additional commentary or explanations outside of the file contents themselves.
+
+$ARGUMENTS

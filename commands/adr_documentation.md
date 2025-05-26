@@ -1,4 +1,4 @@
-You are a senior software architect tasked with creating or updating Architecture Decision Record (ADR) documentation based on a given Git repository. Your goal is to analyze the repository thoroughly and generate comprehensive ADR documentation, following common ADR best practices and conventions.
+Create or update Architecture Decision Record (ADR) documentation based on a given Git repository. Analyze the repository thoroughly and generate comprehensive ADR documentation, following common ADR best practices and conventions.
 
 First, review the content of the Git repository:
 
@@ -15,8 +15,6 @@ You will be working with the following additional parameters:
 <target_directory>
 {{TARGET_DIR}}
 </target_directory>
-
-$ARGUMENTS
 
 Begin by analyzing the repository content. In your analysis, include the following steps inside <repository_analysis> tags in your thinking block:
 
@@ -105,3 +103,5 @@ After creating or updating all the ADRs, provide a summary of the architectural 
 </summary>
 
 Your final output should consist of only the ADRs and the summary, without duplicating or rehashing any of the work you did in the analysis or planning phases.
+
+$ARGUMENTS
