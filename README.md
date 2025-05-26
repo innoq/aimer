@@ -4,7 +4,9 @@ AIMER provides battle-tested methodologies and structured approaches for softwar
 
 Each command represents a specific analytical methodology designed to systematically examine different aspects of your software systems: from identifying architectural hotspots and documenting decisions to analyzing stakeholder needs and security concerns.
 
+<div align="center">
 <img src="aimer.webp" alt="Illustration of a wooden catapult with a smiling face aimed at a stone castle tower, with colorful bandages floating above, representing AIMER's approach to fixing and improving software systems" width="50%">
+</div>
 
 ## Use with Claude Code
 
