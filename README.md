@@ -124,6 +124,6 @@ See the [LICENSE](LICENSE) file for details.
 
 ---
 
-Made with ❤️ at [INNOQ](https://data-ai.innoq.com)
+Made with ❤️ by humans and machines at [INNOQ](https://data-ai.innoq.com)
 
 <img src="https://innoq.style/assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg" alt="INNOQ" width="150">
