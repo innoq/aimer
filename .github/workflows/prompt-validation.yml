@@ -1,0 +1,67 @@
+name: Prompt Validation
+
+on:
+  pull_request:
+    paths:
+      - 'commands/**.md'
+      - 'prompt-guideline.md'
+
+jobs:
+  validate-prompts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for proper diff
+
+      - name: Get changed prompt files
+        id: changed-files
+        run: |
+          # Get list of changed prompt files in this PR
+          echo "Changed prompt files:"
+          git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -E "^commands/.*\.md$" || echo "No prompt files changed"
+          
+          # Count changed files
+          count=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -E "^commands/.*\.md$" | wc -l || echo "0")
+          echo "changed_count=$count" >> $GITHUB_OUTPUT
+          
+          # Save list for comment
+          {
+            echo "## 🔍 Prompt Validation Request"
+            echo ""
+            echo "@claude Please validate the following changed prompt files against our prompt-guideline.md:"
+            echo ""
+            git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -E "^commands/.*\.md$" | while read file; do
+              echo "- \`$file\`"
+            done || echo "No prompt files changed"
+            echo ""
+            echo "Check for:"
+            echo "1. All required sections (Purpose, Context, Instructions, Output Format, Success Criteria, \$ARGUMENTS)"
+            echo "2. No role-based prompting patterns"
+            echo "3. Imperative, direct language"
+            echo "4. Explicit output format specification"
+            echo "5. \$ARGUMENTS placeholder at the end"
+            echo ""
+            echo "Please provide a validation report with ✅/❌/⚠️ indicators for each file."
+          } > comment.txt
+
+      - name: Comment PR for validation
+        if: steps.changed-files.outputs.changed_count != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const comment = fs.readFileSync('comment.txt', 'utf8');
+            
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
