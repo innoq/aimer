@@ -112,7 +112,9 @@ claude > /user:stakeholder-interviews think especially about technical debt conc
 - **Documentation**: Templates for generating and improving documentation
 
 ## Contributing
-Contributions are welcome! Please feel free to submit a pull request with new prompts or improvements to existing ones.
+Contributions are welcome! When creating or modifying prompts, please follow our [Prompt Guidelines](prompt-guideline.md) to ensure consistency and quality across all AIMER commands.
+
+Please feel free to submit a pull request with new prompts or improvements to existing ones.
 
 ## Maintainers
 - Markus Harrer
