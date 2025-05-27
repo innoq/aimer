@@ -34,14 +34,8 @@ jobs:
             Focus ONLY on changed files in the commands/ directory that end with .md
             
             For each changed prompt file:
-            1. Read and analyze it against the guidelines in prompt-guideline.md
-            2. Check for ALL of these requirements:
-               - Contains all required sections: Purpose, Context, Instructions, Output Format, Success Criteria
-               - Ends with $ARGUMENTS placeholder
-               - Uses imperative, direct language (no "You should..." patterns)
-               - Avoids role-based prompting (no "You are a..." patterns)
-               - Has explicit, well-structured output format specification
-               - Instructions are clear and logically structured
+            1. Read and analyze it against the guidelines in @prompt-guideline.md
+            2. Check for ALL of the requirements in @prompt-guideline.md
             
             Provide a detailed validation report with:
             - File name and validation status (✅ PASS / ❌ FAIL / ⚠️ WARNING)
