@@ -248,3 +248,7 @@ For CI/CD integration, the following checks can be implemented:
 4. **$ARGUMENTS presence**: Placeholder present at the end
 
 These guidelines are intended to be living documents - updates based on new insights and user feedback are welcome.
+
+## Markdown stylistics
+- Ensure correct hierarchy of headings, a prompt’s title has to be h1
+- Avoid empty newlines after headings
