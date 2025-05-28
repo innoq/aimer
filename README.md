@@ -1,5 +1,52 @@
 # AIMER: AI-Assisted Software Analysis & Improvement Prompts
 
+## The Challenge
+
+How can we make sense of and improve legacy systems using modern AI?
+
+AIMER tackles this question by combining **Generative AI**, **agentic AI**, and **structured methodologies** for software analysis and improvement. We're inspired by proven approaches such as:
+
+* The [**aim42 Architecture Improvement Method**](https://aim42.github.io/), which offers a structured way to analyze and evolve complex systems.
+* The book [**Software Reviews**](https://leanpub.com/software-reviews-en), which provides practical, experience-driven techniques for understanding software quality and architecture.
+
+Both aren't just abstract theories but contain battle-tested activities from real projects. Our goal is to translate them into actionable, reusable AI-powered workflows to make analyzing and improving software systems more efficient.
+
+### What We Want to Achieve
+
+We want to create a tool that supports developers and architects in analyzing and improving legacy systems by guiding Large Language Models (LLMs) through codebases, artifacts, and architecture.
+
+For this, this repository contains early ideas and prototypes of commands for Claude Code that implement parts of the aim42 method and Software Reviews techniques. Most of them will not work yet and need improvement to get the best out of Large Language Models. Therefore, we want to explore agentic workflows, where LLMs act as autonomous agents performing complex analysis tasks by combining code, documentation, Git history, quality models, and more.
+
+### But We Need Your Help!
+
+Legacy systems are rarely clean. They’re huge, undocumented, and deeply embedded in real business processes. To generate valuable insights, LLMs need to:
+
+* Navigate and interpret sprawling, inconsistent codebases
+* Understand implicit decisions and trade-offs
+* Connect technical structures to architectural and stakeholder concerns
+* Make suggestions based on trustworthy data that can also be verified by humans
+* Deliver actionable insights — ideally even suggesting or automating specific refactorings, and not vague advice
+
+This is more than prompt engineering — it's about designing a mini framework that structures how an LLM thinks about software systems.
+
+### How You Can Help
+
+This is an open challenge and an evolving community effort.
+
+We welcome contributions such as:
+
+* Designing prompts or commands that operationalize analysis techniques
+* Proposing how agents can autonomously explore and reason about legacy systems
+* Sharing real-world cases that stress-test our prototypes
+* Exploring hybrid integrations: static analysis + architecture views + LLM insights
+
+We believe AI can become a true partner in software modernization — not by replacing human judgment, but by scaling and systematizing our expertise.
+
+
+## The Vision of AIMER
+
+*This is what we aim for with the AIMER project:*
+
 AIMER provides battle-tested methodologies and structured approaches for software analysis and improvement, leveraging years of practical experience in software architecture and development. These aren't just prompts – they're distilled little frameworks based on solid foundations from industry expertise and proven practices.
 
 Each command represents a specific analytical methodology designed to systematically examine different aspects of your software systems: from identifying architectural hotspots and documenting decisions to analyzing stakeholder needs and security concerns.
@@ -8,7 +55,7 @@ Each command represents a specific analytical methodology designed to systematic
     <img src="aimer.webp" alt="Illustration of a wooden catapult with a smiling face aimed at a stone castle tower, with colorful bandages floating above, representing AIMER's approach to fixing and improving software systems" width="50%">
 </div>
 
-**💡 Important Hint**: All AIMER prompts are designed for **thinking mode (reasoning)** or, if not using Claude, models that can do chain-of-thought reasoning. For optimal results, append terms like "think", "think harder", or "ultrathink" to your slash commands. By default, thinking mode is not activated, so remember to explicitly enable it for deeper, more thorough analysis.
+
 
 ## Use with Claude Code
 
@@ -57,6 +104,8 @@ claude > /project:hotspot-analysis
 ```bash
 git submodule update --remote .claude/commands/aimer
 ```
+
+**💡 Important Hint**: All AIMER prompts are designed for **thinking mode (reasoning)** or, if not using Claude, models that can do chain-of-thought reasoning. For optimal results, append terms like "think", "think harder", or "ultrathink" to your slash commands. By default, thinking mode is not activated, so remember to explicitly enable it for deeper, more thorough analysis.
 
 ### User-Specific Commands
 To make AIMER prompts available for all your projects:
