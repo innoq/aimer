@@ -1,5 +1,9 @@
 # AIMER: AI-Assisted Software Analysis & Improvement Prompts
 
+<div align="center">
+    <img src="aimer.webp" alt="Illustration of a wooden catapult with a smiling face aimed at a stone castle tower, with colorful bandages floating above, representing AIMER's approach to fixing and improving software systems" width="50%">
+</div>
+
 ## The Challenge
 
 How can we make sense of and improve legacy systems using modern AI?
@@ -50,11 +54,6 @@ We believe AI can become a true partner in software modernization — not by rep
 AIMER provides battle-tested methodologies and structured approaches for software analysis and improvement, leveraging years of practical experience in software architecture and development. These aren't just prompts – they're distilled little frameworks based on solid foundations from industry expertise and proven practices.
 
 Each command represents a specific analytical methodology designed to systematically examine different aspects of your software systems: from identifying architectural hotspots and documenting decisions to analyzing stakeholder needs and security concerns.
-
-<div align="center">
-    <img src="aimer.webp" alt="Illustration of a wooden catapult with a smiling face aimed at a stone castle tower, with colorful bandages floating above, representing AIMER's approach to fixing and improving software systems" width="50%">
-</div>
-
 
 
 ## Use with Claude Code
