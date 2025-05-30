@@ -1,4 +1,4 @@
-# AIMER: AI-Assisted Software Analysis & Improvement Prompts
+# AIMER: Experiments on AI-Assisted Software Analysis & Improvements
 
 <div align="center">
     <img src="aimer.webp" alt="Illustration of a wooden catapult with a smiling face aimed at a stone castle tower, with colorful bandages floating above, representing AIMER's approach to fixing and improving software systems" width="50%">
@@ -53,12 +53,29 @@ We believe AI can become a true partner in software modernization — not by rep
 
 AIMER provides battle-tested methodologies and structured approaches for software analysis and improvement, leveraging years of practical experience in software architecture and development. These aren't just prompts – they're distilled little frameworks based on solid foundations from industry expertise and proven practices.
 
-Each command represents a specific analytical methodology designed to systematically examine different aspects of your software systems: from identifying architectural hotspots and documenting decisions to analyzing stakeholder needs and security concerns.
+Each command represents a specific analytical methodology designed to systematically examine different aspects of your software systems: from identifying architectural hotspots and documenting decisions to challenging security concerns and the original stakeholder needs and assumptions.
 
 
-## Use with Claude Code
+## Current Status 
 
-You may use these prompts wherever you like. 
+We're working in public to explore what's currently possible with AI-assisted architecture development and legacy system modernization together with you!
+
+For this, we've created several commands for Claude Code and are using a lightweight process, mapped to three directories:
+
+* `ideas`: Early-stage prompts and concepts, many inspired by resources like the *aim42* guide or the book *Software Reviews*. Some suggestions may not make sense yet and possible to implement with today's technologies, but we'll refine and filter them over time. See the contents of this directory more like an initial brainstorming.
+
+* `experiments`: More developed ideas and commands we're actively testing. They're absolutely not production-ready, but first developers are working on those to evolve them into something that could actually work. Here we especially welcome discussions and feedback to improve their robustness and usefulness.
+
+* `commands`: Stable prompts that work reliably and help answer architectural questions, especially in real-world legacy modernization scenarios.
+
+Depending on your goals, copy the commands you want to work on into Claude Code's `commands` directory or add new ideas directly to the repository with a Pull Request.
+
+
+## Current Approach
+
+We're using Claude Code as starting point for our first experiments in this area to avoid creating something that will be obsolete with the next iteration of AI assistents.
+
+You may use these prompts wherever you like.
 We’ll document a way to use them as [custom slash commands in Claude Code](https://docs.anthropic.com/en/docs/claude-code/tutorials#create-custom-slash-commands):
 
 ### Project-Specific Commands
