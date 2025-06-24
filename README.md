@@ -66,25 +66,46 @@ For this, we've created several commands for Claude Code and are using a lightwe
 
 * `experiments`: More developed ideas and commands we're actively testing. They're absolutely not production-ready, but first developers are working on those to evolve them into something that could actually work. Here we especially welcome discussions and feedback to improve their robustness and usefulness.
 
-* `commands`: Stable prompts that work reliably and help answer architectural questions, especially in real-world legacy modernization scenarios.
+* `prod`: Stable prompts that work reliably and help answer architectural questions, especially in real-world legacy modernization scenarios.
 
 Depending on your goals, copy the commands you want to work on into Claude Code's `commands` directory or add new ideas directly to the repository with a Pull Request.
 
 
-## Current Approach
+## Current Usage Scenarios
 
 We're using Claude Code as starting point for our first experiments in this area to avoid creating something that will be obsolete with the next iteration of AI assistents.
 
 You may use these prompts wherever you like.
+
 We’ll document a way to use them as [custom slash commands in Claude Code](https://docs.anthropic.com/en/docs/claude-code/tutorials#create-custom-slash-commands):
 
-### Project-Specific Commands
+### A. Use commands within a single project / repo (Recommended)
 
-To make AIMER prompts available within a specific project:
+To make AIMER prompts available within a specific project or repository you have two options:
 
-#### Option 1: Direct Clone
+#### Option A.1: Git Submodule (Recommended)
 
-1. Clone this repository into your project's `.claude/commands` directory:
+Adding AIMER as a Git submodule allows you to track specific versions and update more easily:
+
+##### A.1.1 Add the repository as a submodule in your project
+
+Navigate to your project root and execute:
+```bash
+mkdir -p .claude/commands
+git submodule add https://github.com/innoq/aimer.git .claude/commands/aimer
+```
+
+##### A.1.2 Update the submodule when needed
+
+```bash
+git submodule update --remote .claude/commands/aimer
+```
+
+#### Option A.2: Direct Clone
+
+Create a simple clone of the current state of the AIMER repository
+
+##### A.2.1. Clone this repository into your project's `.claude/commands` directory
 
 ```bash
 # Navigate to your project root
@@ -92,59 +113,35 @@ mkdir -p .claude/commands
 git clone https://github.com/innoq/aimer.git .claude/commands
 ```
 
-2. Use the commands in Claude Code with the `/project:` prefix:
+#### Executing commands
 
-```
-claude > /project:hotspot-analysis
-```
+You can execute the commands with a starting `/`. The AIMER commands will reflect the file names of the prompt templates.
 
-#### Option 2: Git Submodule (Recommended)
-Adding AIMER as a Git submodule allows you to track specific versions and update more easily:
+Take a look at the suffix of the command's description to see in which stage the command is (e.g. `(project:ideas)`) before using it.
 
-1. Add the repository as a submodule in your project:
+### B. Use commands User-wide
 
-```bash
-# Navigate to your project root
-mkdir -p .claude/commands
-git submodule add https://github.com/innoq/aimer.git .claude/commands/aimer
-```
-
-2. Use the commands in Claude Code with the `/project:` prefix:
-
-```
-claude > /project:hotspot-analysis
-```
-
-3. Update the submodule when needed:
-
-```bash
-git submodule update --remote .claude/commands/aimer
-```
-
-**💡 Important Hint**: All AIMER prompts are designed for **thinking mode (reasoning)** or, if not using Claude, models that can do chain-of-thought reasoning. For optimal results, append terms like "think", "think harder", or "ultrathink" to your slash commands. By default, thinking mode is not activated, so remember to explicitly enable it for deeper, more thorough analysis.
-
-### User-Specific Commands
-To make AIMER prompts available for all your projects:
-
-1. Clone this repository into your home Claude commands directory:
+Instead making a copy / clone to a specific project dir, you can also put AIMER into your user's home directory:
 
 ```bash
 mkdir -p ~/.claude/commands
 git clone https://github.com/innoq/aimer.git ~/.claude/commands
 ```
 
-2. Use the commands in Claude Code with the `/user:` prefix:
+#### Executing commands
 
-```
-claude > /user:hotspot-analysis
-```
+You can execute the commands with a starting `/`. The user-wide AIMER commands will have the suffix `(user)` (as other existing user commands will, too). Unfortunately, you won't see in which state the current command is. Therefore, this usage variant isn't recommended currently.
 
 ## Usage Tips
-- Command names are derived from the filename (e.g., `hotspot-analysis.md` becomes `/project:hotspot-analysis`)
+
+**💡 Important Hint**: All AIMER prompts are designed for **thinking mode (reasoning)** or, if not using Claude, models that can do chain-of-thought reasoning. For optimal results, append terms like "think", "think harder", or "ultrathink" to your slash commands. By default, thinking mode is not activated, so remember to explicitly enable it for deeper, more thorough analysis.
+
+- Command names are derived from the filename (e.g., `hotspot-analysis.md` becomes `/hotspot-analysis`)
 - You can organize prompts in subdirectories for better categorization
 - Project-scoped commands are shared with team members who have access to the repository
 - User-scoped commands are available to you across all projects
 - All prompts use `$ARGUMENTS` to accept additional contextual information as parameter to `claude` on the CLI, as well as inside the REPL
+
 
 ### Using Thinking Mode (Reasoning)
 
@@ -154,21 +151,21 @@ All AIMER commands include a `$ARGUMENTS` placeholder that allows you to pass ad
 
 **Basic command:**
 ```
-claude > /user:hotspot-analysis
+claude > /hotspot-analysis
 ```
 
 **With thinking mode for deeper analysis:**
 ```
-claude > /user:hotspot-analysis think
-claude > /user:hotspot-analysis think harder
-claude > /user:hotspot-analysis ultrathink
+claude > /hotspot-analysis think
+claude > /hotspot-analysis think harder
+claude > /hotspot-analysis ultrathink
 ```
 
 **Other useful argument patterns:**
 ```
-claude > /user:code-walkthrough think and focus on error handling patterns
-claude > /user:quality-scenario-analysis think and prioritize performance scenarios
-claude > /user:stakeholder-interviews think especially about technical debt concerns
+claude > /code-walkthrough think and focus on error handling patterns
+claude > /quality-scenario-analysis think and prioritize performance scenarios
+claude > /stakeholder-interviews think especially about technical debt concerns
 ```
 
 ## Categories
@@ -182,9 +179,9 @@ Contributions are welcome! When creating or modifying prompts, please follow our
 Please feel free to submit a pull request with new prompts or improvements to existing ones.
 
 ## Maintainers
-- [Markus Harrer](https://www.innoq.com/en/staff/markus-harrer/)
 - [Roman Stranghöner](https://www.innoq.com/en/staff/roman-stranghoener/)
 - [Robert Glaser](https://www.innoq.com/en/staff/robert-glaser/)
+- [Markus Harrer](https://www.innoq.com/en/staff/markus-harrer/)
 
 ## License
 See the [LICENSE](LICENSE) file for details.
