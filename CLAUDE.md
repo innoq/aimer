@@ -9,7 +9,9 @@ AIMER is a collection of AI-assisted software analysis and improvement prompts. 
 ## Architecture
 
 The repository has a simple structure:
-- `commands/` - Contains all prompt templates as Markdown files
+- `prod/` - Contains all prompt templates as Markdown files that are production-ready
+- `experiments/` - Contains prompt templates as Markdown files that might work but are not ready for production
+- `ideas`- Contains ideas as prompts as Markdown files that don't work yet but are placeholders for later prompt templates
 - Each prompt file follows a consistent format with Purpose, Context, Instructions, Output Format, and Success Criteria sections
 - All prompts include an `$ARGUMENTS` placeholder for additional contextual information
 
