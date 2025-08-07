@@ -181,7 +181,7 @@ Please feel free to submit a pull request with new prompts or improvements to ex
 ## Maintainers
 - [Roman Stranghöner](https://www.innoq.com/en/staff/roman-stranghoener/)
 - [Robert Glaser](https://www.innoq.com/en/staff/robert-glaser/)
-- [Markus Harrer](https://www.innoq.com/en/staff/markus-harrer/)
+- [Markus Harrer (On-call Advisor)](https://www.innoq.com/en/staff/markus-harrer/)
 
 ## License
 See the [LICENSE](LICENSE) file for details.
